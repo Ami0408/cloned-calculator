@@ -1,0 +1,70 @@
+  body,html{
+    margin: 0;
+    padding: 0;
+  }
+
+  #button{
+    height: 4.5rem;
+    width:  4.5rem;
+    border-radius: 100%;
+    border: none;
+    font-size: 1.9rem;
+    font-weight: 400;
+  }
+  .key-pad{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    height: 50vh;    
+    margin-bottom: 0vh;
+    width: 75%;
+    padding-right: 0;
+    position: fixed;
+    gap: 1.125rem;  
+    grid-column: 1;
+}
+  .zero{
+    grid-column:span 2;
+    place-items: center;  
+}
+
+
+  #button:nth-child(1),#button:nth-child(2),#button:nth-child(4n),#button:nth-child(3),#button:nth-child(19){
+    color: white;
+    background-color: #f4a40b;
+    
+  }
+  *{
+    font-family: "Inter Tight", sans-serif;
+    box-sizing: border-box;  
+} 
+  body {
+    background-color: black;
+  }
+  input{
+    height: 3%;
+    background-color: black;
+    font-size: 3rem;
+    border: 0px none black;
+    padding-right: 5.25vw;
+    text-align: right;
+    width: 90vw;
+}
+ 
+  form{
+    position: relative;
+    bottom: 0vh;
+    margin-top: 15vh;
+    padding-left: 0.5rem;
+    width: 75%;  
+    margin-bottom: 1vh;
+ 
+}
+.answer{
+  color: white !important;
+  transform: scale(1.25);
+}
+.display{
+  color: lightgrey;
+  padding-left: 0.5rem; 
+}
